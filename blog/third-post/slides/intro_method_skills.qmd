@@ -30,13 +30,6 @@ execute:
 
 ```{r}
 #| echo: false
-#| results: hide 
-
-install.packages('countdown')
-```
-
-```{r}
-#| echo: false
 
 library(knitr)
 options(knitr.graphics.auto_pdf = TRUE)
@@ -173,13 +166,6 @@ Source: © Mark Saunders, Philip Lewis and Adrian Thornhill 2006.
 
 ## Activity – Locating your paradigm
 
-```{r}
-#| echo: false
-
-countdown::countdown(minutes = 5, seconds = 00)
-```
-
-
 - Think-Pair-Share: What discipline or field are you in? Discuss which research paradigm(s) are common in your field.
 - Are there taken-for-granted assumptions about what should be studied, how to study it, and what counts as evidence in your field?
 
@@ -210,12 +196,6 @@ countdown::countdown(minutes = 5, seconds = 00)
 - Ethical research ensures the rights and well-being of participants are protected and that the knowledge gained is trustworthy.
 
 ## Activity – Ethics scenario
-
-```{r}
-#| echo: false
-
-countdown::countdown(minutes = 5, seconds = 00)
-```
 
 - Imagine you are conducting interviews on a sensitive topic (e.g., mental health). How would you ensure your study is ethical?
 
@@ -255,12 +235,6 @@ countdown::countdown(minutes = 5, seconds = 00)
 - `Methods`: A positivist approach might survey homes against design quality criteria & quantify residents’ satisfaction. An interpretivist approach might conduct interviews or focus groups to explore how people perceive and discuss “poor design”.
 
 ## Activity – Plan a study
-
-```{r}
-#| echo: false
-
-countdown::countdown(minutes = 10, seconds = 00)
-```
 
 - Choose a research question of interest (e.g., “How does social media use affect academic performance?”).
 - What research approach would you use (qualitative, quantitative, or mixed) and why? What paradigm might this align with? 
