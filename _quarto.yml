@@ -10,6 +10,7 @@ website:
       - text: Home
         href: index.qmd
 
+
 format:
   html:
     backgroundcolor: "#eeffee"
