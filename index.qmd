@@ -1,22 +1,27 @@
 ---
-title: "Bruce Wayne"
-subtitle: "I am Batman"
-image: profile.jpg
-about: # https://quarto.org/docs/websites/website-about.html
-  template: trestles
+title: "Harsha Halgamuwe Hewage"
+subtitle: "Forecaster & Researcher"
+image: images/profile.jpg
+about:
+  template: jolla  # Different templates: jolla, trestles, solana, marquee, or broadside
   image-shape: round
   links:
+    - icon: envelope-at-fill  # https://icons.getbootstrap.com/?q=book
+      text: e-mail
+      href: mailto:hewagehrc@gamil.com
     - icon: github
       text: Github
-      href: https://github.com/cwickham
+      href: https://github.com/chamara7h
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/harshachamara/
+    - icon: bookmark-star-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=XgQYqK8AAAAJ&hl=en
 ---
 
-{{< lipsum 1 >}}
+  I am a PhD student at the Data Lab for Social Good research group at Cardiff University, UK. My research focuses on improving forecast methodologies for family planning supply chains in developing countries, with the goal of enhancing their efficiency and accessibility. In addition to my PhD work, I serve as the Coordinator and Training Lead at the [Data Lab for Social Good](https://www.cardiff.ac.uk/research/explore/research-units/data-lab-for-social-good).
 
-## Education
+  I have also led the research network at [Forecasting for Social Good (F4SG)](https://forecasters.org/programs/communities/forecasting-for-social-good-f4sg/), an official section of the International Institute of Forecasters. As part of this role, I managed the [Learning Labs workshop series](https://github.com/chamara7h/F4SG), providing free training on forecasting methodologies using R and Python. I am passionate about leveraging data science and forecasting techniques to address global challenges, and I actively engage with the forecasting and social good communities through workshops, collaborations, and research initiatives.
 
-University of XYZ, City \| Location \| Sept 20XX - June 20XX
-
-## Experience
-
-Workplace \| Job title \| April 20XX - present
+Explore my [full list of publications](https://scholar.google.com/citations?user=XgQYqK8AAAAJ&hl=en) on Google Scholar.

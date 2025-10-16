@@ -1,0 +1,42 @@
+---
+title: "Who am I"
+---
+
+  I am **Harsha Chamara Hewage**, a PhD candidate at **Cardiff Business School** (Data Lab for Social Good). My research sits at the intersection of machine learning, time‑series forecasting and healthcare supply chains. I design methods to estimate true demand under censored observations (stockouts & service interruptions) and translate those estimates into inventory policies that improve availability of essential health commodities.
+
+I work closely with supervisors and collaborators across academia and practice, and I enjoy building reproducible forecasting pipelines (R/Quarto/Git/Docker), delivering hands‑on training, and translating technical research into operational guidance for supply chain practitioners.
+
+## Education
+
+* **PhD**, Cardiff Business School — Machine Learning & Forecasting for Healthcare Supply Chains (ongoing)
+* **[Previous degree(s) — add details if you want]**
+  
+## Research focus / PhD project
+  
+  My research focuses on addressing inefficiencies in supply chain management for contraceptive products in developing countries. These inefficiencies often lead to shortages, limiting women's reproductive autonomy and exacerbating societal challenges. By integrating probabilistic forecasting with inventory optimization, I aim to create a novel approach that accounts for uncertainties, poor data quality, and local demand variations. This interdisciplinary project involves collaboration with scholars from Cardiff Business School, the School of Computer Science & Informatics, and the United States Agency for International Development (USAID). The goal is to improve access to contraceptives, reduce unintended pregnancies, and prevent unsafe abortions, ultimately benefiting women, healthcare providers, governments, and donor organizations.
+
+## Supervision team
+
+- Lead: [Prof Bahman Rostami-Tabar](https://profiles.cardiff.ac.uk/staff/rostami-tabarb), Data Lab for Social Good Research Group, Cardiff Business School, UK
+- Co: [Prof Aris Syntetos](https://www.cardiff.ac.uk/people/view/598321-syntetos-aris), Cardiff Business School, UK
+- Co: [Dr Federico Liberatore](https://www.cardiff.ac.uk/people/view/1721244-liberatore-federico), School of Computer Science and Informatics, UK
+- Collaborator: [Glenn Milano](https://www.linkedin.com/in/milano-glenn/), Global Health Supply Chain, Bureau for Global Health, United States Agency for International Development (USAID)
+
+## Funder
+
+Welsh Graduate School for the Social Sciences (WGSSS)
+
+## Teaching & training
+
+* Graduate tutor: Forecasting and Business Analytics modules (Cardiff).
+* Delivered workshops and short courses: Introduction to Python for researchers, time series forecasting workshops for pharmaceutical officers in Ethiopia, Quarto website training for R users.
+
+## Technical skills
+
+* **Languages & tooling:** R (tidyverse, tsibble, fable), Python (pandas, mlforecast), Quarto, Git/GitHub, Docker, LaTeX/TikZ
+* **Forecasting & ML:** State‑space models, Tobit/Kalman approaches, conformal prediction, LightGBM/XGBoost, probabilistic forecasting, hierarchical forecasting
+* **Supply chain / domain tools:** LMIS/DHIS2 contexts, inventory simulation, demand censoring and lost‑sales handling
+* **Reproducibility & deployment:** renv, Quarto websites, GitHub Actions, containerised evaluation (CHAP)
+
+
+

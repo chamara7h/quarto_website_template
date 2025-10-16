@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Overview of forecasting and data science projects.">
 
-<title>Projects – Home</title>
+<title>Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -78,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-image','listing-description','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-image","listing-description","listing-categories","listing-date"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -128,8 +129,9 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Projects – Home">
-<meta property="og:site_name" content="Home">
+<meta property="og:title" content="Projects">
+<meta property="og:description" content="Overview of forecasting and data science projects.">
+<meta property="og:image" content="../projects/data_science/cover.jpg">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -138,24 +140,64 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Home</span>
-    </a>
-  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../index.html"> <i class="bi bi-house-door-fill" role="img">
+</i> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../talks/index.html"> 
+<span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-publications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Publications</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-publications">    
+        <li>
+    <a class="dropdown-item" href="../journal_articles/index.qmd">
+ <span class="dropdown-text">Journal Publications</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../book_chapters/index.qmd">
+ <span class="dropdown-text">Book Chapters</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../working_papers/index.qmd">
+ <span class="dropdown-text">Working Papers</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../technical_reports/index.qmd">
+ <span class="dropdown-text">Technical Reports</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://github.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+    <a href="https://www.google.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-bookmark-star-fill"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -173,6 +215,11 @@ window.Quarto = {
 <h1 class="title">Projects</h1>
 </div>
 
+<div>
+  <div class="description">
+    Overview of forecasting and data science projects.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -192,103 +239,73 @@ window.Quarto = {
 
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Python,Machine Learning,Data Cleaning" data-listing-date-sort="1704063600000">
-<a href="https://example.com/house-prices" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="R,Python,Quarto,Postron,Machine Learning" data-listing-file-modified-sort="1760604969861" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/data_science/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="images/breno-assis-r3WAWU5Fi5Q-unsplash.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../projects/data_science/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Predicting House Prices with Machine Learning
+Data Science
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Data Cleaning'); return false;">
-Data Cleaning
-</div>
-</div>
 <div class="card-text listing-description">
-<p>This project involves using machine learning algorithms to predict house prices based on various features such as location, size, and amenities. It includes data cleaning, feature engineering, and model selection.</p>
+My data sceince projects.
 </div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jan 1, 2024
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="R,Machine Learning,Clustering,Statistical Modelling" data-listing-date-sort="1711922400000">
-<a href="https://example.com/customer-segmentation" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="LCA,Green Tech,Recycle" data-listing-file-modified-sort="1760605557433" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/sustainability/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="images/adrien-delforge-CrHG_ZYn1Dw-unsplash.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../projects/sustainability/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Customer Segmentation Using Clustering Techniques
+Sustainability
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Clustering'); return false;">
-Clustering
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Statistical Modelling'); return false;">
-Statistical Modelling
-</div>
-</div>
 <div class="card-text listing-description">
-<p>This project focuses on segmenting customers into different groups based on their purchasing behavior and demographics. It uses clustering algorithms like K-means and hierarchical clustering to identify distinct customer segments.</p>
+My sustainability projects.
 </div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 1, 2024
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="R,Data Visualization,Environmental Science" data-listing-date-sort="1719784800000">
-<a href="https://example.com/co2-visualization" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="R,Python,Quarto,Postron,Machine Learning" data-listing-file-modified-sort="1760605497353" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/forecasting/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="images/anne-nygard-vc-vPgGqAr4-unsplash.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../projects/forecasting/cover.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Visualizing Global CO2 Emissions
+Time Series Forecasting
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Data Visualization'); return false;">
-Data Visualization
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Environmental Science'); return false;">
-Environmental Science
-</div>
-</div>
 <div class="card-text listing-description">
-<p>This project involves creating visualizations to show trends in global CO2 emissions over time. It includes data extraction from public databases, data cleaning, and using visualization libraries to create interactive charts and graphs.</p>
+My forecasting projects.
 </div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 1, 2024
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
 </div>
 </div>
 </div>

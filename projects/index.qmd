@@ -1,7 +1,12 @@
 ---
-title: Projects
-listing:
-  contents: projects.yml
-  type: grid
-  max-description-length: 250
+title: "Projects"
+description: "Overview of forecasting and data science projects."
+listing: 
+  contents: 
+    - "data_science/*.qmd"
+    - "forecasting/*.qmd"
+    - "sustainability/*.qmd"
+  type: grid # Explore more listing types; default, grid or table
+  filter-ui: true
 ---
+
