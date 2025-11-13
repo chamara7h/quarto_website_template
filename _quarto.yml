@@ -43,6 +43,6 @@ format:
     backgroundcolor: "#FFFFFF" # https://www.figma.com/colors/
     fontcolor: "rgb(55, 58, 60)"
     linkcolor: "#0066b2"
-    mainfont: "Segoe UI"   # "Source Sans Pro", "-apple-system", "system-ui", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+    mainfont: "system-ui"   # "Source Sans Pro", "-apple-system", "system-ui", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
     theme: [cosmo, styles.scss] # https://quarto.org/docs/output-formats/html-themes.html
 

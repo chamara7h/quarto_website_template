@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-author','listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-description","listing-categories","listing-date"],
+      searchColumns: ["listing-title","listing-author","listing-categories","listing-date"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -241,10 +241,10 @@ window.Quarto = {
 <thead>
 <tr>
 <th>
-Title
+Author/(s)
 </th>
 <th>
-Description
+Title
 </th>
 <th>
 Keywords
@@ -252,12 +252,12 @@ Keywords
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="Python,Machine Learning,Data Cleaning" data-listing-date-sort="1704063600000" data-listing-title-sort="Harsha Chamara Hewage, H. Niles Perera, Shari De Baets, Forecast adjustments during post-promotional periods, European Journal of Operational Research.">
+<tr data-index="0" data-categories="Python,Machine Learning,Data Cleaning" data-listing-date-sort="1704063600000" data-listing-title-sort="Forecast adjustments during post-promotional periods, European Journal of Operational Research.">
 <td>
-<a href="https://doi.org/10.1016/j.ejor.2021.07.057" class="title listing-title">Harsha Chamara Hewage, H. Niles Perera, Shari De Baets, Forecast adjustments during post-promotional periods, European Journal of Operational Research.</a>
+<span class="listing-author">Harsha Chamara Hewage, H. Niles Perera, Shari De Baets</span>
 </td>
 <td>
-<span class="listing-description">We study judgmental forecast adjustments in pre-promotional (normal), promotional and post-promotional periods via behavioral experiments. Forecasters need structured support to make effective adjustments during post-promotional periods. The…</span>
+<a href="https://doi.org/10.1016/j.ejor.2021.07.057" class="title listing-title">Forecast adjustments during post-promotional periods, European Journal of Operational Research.</a>
 </td>
 <td>
 <span class="listing-categories">Python, Machine Learning, Data Cleaning</span>
